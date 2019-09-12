@@ -43,22 +43,21 @@ end
 def run(songs)
   puts "Please enter a command:"
   command = gets.strip
-
   case command
-  when 'exit'
-    exit_jukebox
-  when 'help'
-    help
-    run(songs)
-  when 'list'
-    list(songs)
-    run(songs)
-  when 'play'
-    play(songs)
-    run(songs)
-  else
-    puts "Invalid command"
-    run(songs)
+    when 'exit'
+      exit_jukebox
+    when 'help'
+      help
+      run(songs)
+    when 'list'
+      list(songs)
+      run(songs)
+    when 'play'
+      play(songs)
+      run(songs)
+    else
+      puts "Invalid command"
+      run(songs)
   end
 end
 
